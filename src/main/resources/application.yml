@@ -1,0 +1,14 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://10.1.0.131:5432/secure
+    username: postgres
+    password: supercarlos
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+        format_sql: true
+    show-sql: true
